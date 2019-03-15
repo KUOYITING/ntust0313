@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Self-Introduction</title>
+	<meta charset="utf-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+header {
+  background-color: darkslateblue;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: aliceblue;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  color: #000;
+  width: 100%;
+  padding: 20px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #003377;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color:azure;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: darkslateblue;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>Self-Introduction</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="01.html">About me</a></li>
+      <li><a class="active" href="02.html">Introduction</a></li>
+      <li><a href="03.html">Photo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Introduction</h1>
+    <p>I'm ninteen years old.</p>
+    <p>Clara, Irene and Emily are my friends.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Have a nice day~</p>
+</footer>
+
+</body>
+</html>
